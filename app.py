@@ -6,7 +6,7 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 app.app_context().push()
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://useranme_anda:password_anda@localhost/flaskmysql'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://triyono777:cobaflaskpass@triyono777.mysql.pythonanywhere-services.com/triyono777$alumni'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -79,4 +79,4 @@ def index():
     return jsonify({'message': 'Welcome to my API'})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
